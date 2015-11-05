@@ -1,11 +1,10 @@
 ﻿@using Kalkus.Blog.Examples.Postal.BusinessLogic.Models
 @model MailBase
-To: @ViewBag.To
+
+To: @Model.Recipients.First()
 From: lolcats@website.com
-Subject: Important Message
+Subject: @Model.Subject
 
 Hello,
 You wanted important web links right?
-Check out this: @ViewBag.FunnyLink
-
-<3
+Check out this...
